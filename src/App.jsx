@@ -1,10 +1,12 @@
 import Header from "./components/header";
-import Projects from "./components/Projects";
+import ProjectList from "./components/ProjectList";
+import AboutMe from "./components/AboutMe";
 function App() {
   return (
     <div>
-      <Header />
-      <Projects />
+      <Header></Header>
+
+      <ProjectList />
     </div>
   );
 }
