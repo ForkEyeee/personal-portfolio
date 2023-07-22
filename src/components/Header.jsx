@@ -12,60 +12,55 @@ function Header() {
   return (
     <div>
       <Flex
-        alignItems={"center"}
         justifyContent={"center"}
-        // w={"200px"}
-        height={"500px"}
-        sx={{
-          background: "linear-gradient(to top left, white 50%, blue 50%)",
+        flexDirection={["column", "column", "row", "row", "row"]}
+        bgColor={{
+          base: "red",
+          sm: "blue",
+          md: "orange",
+          lg: "pink",
+          xl: "green",
         }}
+        alignItems={"center"}
+        bgGradient={[
+          "linear(to-tr, teal.300, yellow.400)",
+          "linear(to-t, blue.200, teal.500)",
+          "linear(to-b, orange.100, purple.300)",
+        ]}
       >
-        <Box mt={"50px"} ml={"60px"} width={"15%"} position={"relative"}>
-          <Image
-            src="src\assets\images\main-image.jpg"
-            alt="Dan Abramov"
-            boxShadow={"dark-lg"}
-            width={"100%"}
-            height={"auto"}
-            objectFit="cover"
-          />
-          <Text
-            position="absolute"
-            top="92%"
-            left="35%"
-            // transform="translate(-331%, 684%)"
-            color="white"
-            fontSize="xl"
-            fontWeight="bold"
-            zIndex={"1"}
-          >
-            ForkEyeee
-          </Text>
+        <Box
+          boxSize={{
+            base: "200px",
+            sm: "300px",
+            md: "250px",
+            lg: "400px",
+            xl: "500px",
+          }}
+          pt={{ base: "20px" }}
+        >
+          <Image src="src\assets\images\main-image.jpg" alt="" />
         </Box>
         <Card
-          size={"sm"}
-          maxWidth={"600px"}
-          boxShadow={"2xl"}
-          transform={"translateY(20px)"}
+          maxW={{
+            base: "250px",
+            sm: "400px",
+            md: "500px",
+            lg: "600px",
+            xl: "700px",
+          }}
+          mt={{ base: "70px" }}
         >
           <CardBody>
-            <Heading pb={"20px"}>About Me</Heading>
-            <Box flexDirection={"column"}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                vitae urna massa. Morbi condimentum blandit eros, vitae iaculis
-                risus congue sed. Maecenas eget nunc consequat, convallis metus
-                ac, tristique ante. Nulla ac urna finibus, efficitur lectus in,
-                semper nunc. Integer aliquet ligula nec nisi elementum, in
-                ultricies est cursus. Suspendisse vel mauris non tellus
-                pellentesque aliquam. Aenean vitae lacinia ligula. Etiam auctor
-                massa sit amet nunc fermentum, non blandit metus interdum.
-              </Text>
-            </Box>
-            <Flex boxSize={"20"} width={"100%"} justifyContent={"flex-end"}>
-              <Image src="src\assets\icons\github-original.svg"></Image>
-              <Image src="src\assets\icons\linkedin-plain.svg"></Image>
-            </Flex>
+            <Text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
+              urna massa. Morbi condimentum blandit eros, vitae iaculis risus
+              congue sed. Maecenas eget nunc consequat, convallis metus ac,
+              tristique ante. Nulla ac urna finibus, efficitur lectus in, semper
+              nunc. Integer aliquet ligula nec nisi elementum, in ultricies est
+              cursus. Suspendisse vel mauris non tellus pellentesque aliquam.
+              Aenean vitae lacinia ligula. Etiam auctor massa sit amet nunc
+              fermentum, non blandit metus interdum.{" "}
+            </Text>
           </CardBody>
         </Card>
       </Flex>
