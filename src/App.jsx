@@ -1,5 +1,5 @@
 import Header from "./components/header";
-import Projects from "./components/ProjectsItem";
+import Projects from "./components/Projects";
 function App() {
   return (
     <div>
