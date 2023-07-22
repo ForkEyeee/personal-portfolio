@@ -1,5 +1,7 @@
+import Header from "./components/header";
+
 function App() {
-  return <div className=" font-serif text-blue-800">TEST</div>;
+  return <Header />;
 }
 
 export default App;
