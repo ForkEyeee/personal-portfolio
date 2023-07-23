@@ -1,12 +1,4 @@
-import {
-  Box,
-  Image,
-  Card,
-  CardBody,
-  Text,
-  Flex,
-  Heading,
-} from "@chakra-ui/react";
+import { Card, CardBody, Text, Flex, Heading, VStack } from "@chakra-ui/react";
 
 function AboutMe() {
   return (
@@ -30,17 +22,19 @@ function AboutMe() {
         mr={{ md: "20px" }}
       >
         <CardBody>
-          <Heading>About Me</Heading>
-          <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
-            urna massa. Morbi condimentum blandit eros, vitae iaculis risus
-            congue sed. Maecenas eget nunc consequat, convallis metus ac,
-            tristique ante. Nulla ac urna finibus, efficitur lectus in, semper
-            nunc. Integer aliquet ligula nec nisi elementum, in ultricies est
-            cursus. Suspendisse vel mauris non tellus pellentesque aliquam.
-            Aenean vitae lacinia ligula. Etiam auctor massa sit amet nunc
-            fermentum, non blandit metus interdum.{" "}
-          </Text>
+          <VStack gap={"15px"}>
+            <Heading>About Me</Heading>
+            <Text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
+              urna massa. Morbi condimentum blandit eros, vitae iaculis risus
+              congue sed. Maecenas eget nunc consequat, convallis metus ac,
+              tristique ante. Nulla ac urna finibus, efficitur lectus in, semper
+              nunc. Integer aliquet ligula nec nisi elementum, in ultricies est
+              cursus. Suspendisse vel mauris non tellus pellentesque aliquam.
+              Aenean vitae lacinia ligula. Etiam auctor massa sit amet nunc
+              fermentum, non blandit metus interdum.
+            </Text>
+          </VStack>
         </CardBody>
       </Card>
     </Flex>

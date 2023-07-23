@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import ProjectList from "./components/ProjectList";
 import ContactMe from "./components/ContactMe";
+
 function App() {
   return (
     <div>

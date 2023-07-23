@@ -1,43 +1,62 @@
-import {
-  Grid,
-  GridItem,
-  Heading,
-  Image,
-  Box,
-  Flex,
-  Text,
-  VStack,
-  Divider,
-  Spinner,
-} from "@chakra-ui/react";
+import { Grid, Heading } from "@chakra-ui/react";
 import Project from "./Project";
+
 function ProjectList() {
   return (
-    <div>
-      <Heading pt={5} pb={5} textAlign={"center"} color={"teal.500"}>
+    <section>
+      <Heading
+        pt={10}
+        pb={10}
+        textAlign={"center"}
+        fontSize={"4xl"}
+        fontWeight={"bold"}
+        color={"teal.500"}
+      >
         My Projects
       </Heading>
 
       <Grid
         p={5}
         templateRows="repeat(2, 1fr)"
-        templateColumns={[
-          "repeat(1, 1fr)",
-          "repeat(1, 1fr)",
-          "repeat(2, 1fr)",
-          "repeat(2, 1fr)",
-          "repeat(3, 1fr)",
-        ]}
-        gap={6}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(2, 1fr)",
+          xl: "repeat(3, 1fr)",
+        }}
+        gap={10}
       >
-        <Project imgSrc={"./src/assets/images/battleship.png"} />
-        <Project imgSrc={"./src/assets/images/battleship.png"} />
-        <Project imgSrc={"./src/assets/images/battleship.png"} />
-        <Project imgSrc={"./src/assets/images/battleship.png"} />
-        <Project imgSrc={"./src/assets/images/battleship.png"} />
-        <Project imgSrc={"./src/assets/images/battleship.png"} />
+        <Project
+          imgSrc={
+            "src/assets/images/1920x1080-blue-ncs-solid-color-background.jpg"
+          }
+        />
+        <Project
+          imgSrc={
+            "src/assets/images/1920x1080-blue-violet-solid-color-background.jpg"
+          }
+        />
+        <Project
+          imgSrc={
+            "src/assets/images/1920x1080-blue-pigment-solid-color-background.jpg"
+          }
+        />
+        <Project
+          imgSrc={
+            "src/assets/images/1920x1080-boston-university-red-solid-color-background.jpg"
+          }
+        />
+        <Project
+          imgSrc={
+            "src/assets/images/1920x1080-bright-green-solid-color-background.jpg"
+          }
+        />
+        <Project
+          imgSrc={
+            "src/assets/images/1920x1080-brilliant-rose-solid-color-background.jpg"
+          }
+        />
       </Grid>
-    </div>
+    </section>
   );
 }
 
