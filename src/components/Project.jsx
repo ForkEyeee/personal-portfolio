@@ -9,16 +9,18 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-function Project() {
+function Project({ imgSrc }) {
+  console.log(imgSrc);
   return (
     <>
       <GridItem>
         <Box position="relative" boxShadow="xl" h="100%" borderRadius="md">
           <Image
             borderRadius="md"
-            boxSize="100%"
+            // boxSize="100%"
             objectFit="cover"
-            src="src\assets\images\battleship.PNG"
+            src={imgSrc}
+            loading="lazy"
           />
           <VStack
             position="absolute"

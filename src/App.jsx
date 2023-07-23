@@ -1,12 +1,12 @@
-import Header from "./components/header";
+import Hero from "./components/Hero";
 import ProjectList from "./components/ProjectList";
-import AboutMe from "./components/AboutMe";
+import ContactMe from "./components/ContactMe";
 function App() {
   return (
     <div>
-      <Header></Header>
-
+      <Hero />
       <ProjectList />
+      <ContactMe />
     </div>
   );
 }
