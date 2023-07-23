@@ -26,13 +26,13 @@ function Project({ imgSrc = "src/assets/images/A_black_image.jpg" }) {
                 <Image
                   boxSize="12%"
                   objectFit="cover"
-                  src="src\assets\icons\github-mark-white.svg"
+                  src="/assets/icons/github-mark-white.svg"
                   _hover={{ transform: "scale(1.2)" }}
                 />
                 <Image
                   boxSize="12%"
                   objectFit="cover"
-                  src="src\assets\icons\linkedin-original.svg"
+                  src="/assets/icons/linkedin-original.svg"
                   _hover={{ transform: "scale(1.2)" }}
                 />
               </HStack>

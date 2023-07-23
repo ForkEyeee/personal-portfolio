@@ -49,21 +49,21 @@ function ContactMe() {
               boxSize="50px"
               objectFit="contain"
               alt="white github logo"
-              src="src\assets\icons\github-mark-white.svg"
+              src="/assets/icons/github-mark-white.svg"
               _hover={{ transform: "scale(1.2)" }}
             />
             <Image
               boxSize="50px"
               objectFit="contain"
               alt="blue linked in logo"
-              src="src\assets\icons\linkedin-original.svg"
+              src="/assets/icons/linkedin-original.svg"
               _hover={{ transform: "scale(1.2)" }}
             />
             <Image
               boxSize="50px"
               objectFit="contain"
               alt="blue twitter bird logo"
-              src="src\assets\icons\Logo blue.svg"
+              src="/assets/icons/Logo blue.svg"
               _hover={{ transform: "scale(1.2)" }}
             />
           </HStack>
@@ -79,7 +79,7 @@ function ContactMe() {
         >
           <Image
             alt="above the clouds in the sunset"
-            src="src\assets\images\nature.jpg"
+            src="/assets/images/nature.jpg"
             borderRadius={"xl"}
             boxShadow={"2xl"}
           />

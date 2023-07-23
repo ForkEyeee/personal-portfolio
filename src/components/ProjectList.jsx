@@ -27,32 +27,32 @@ function ProjectList() {
       >
         <Project
           imgSrc={
-            "src/assets/images/1920x1080-blue-ncs-solid-color-background.jpg"
+            "/assets/images/1920x1080-blue-ncs-solid-color-background.jpg"
           }
         />
         <Project
           imgSrc={
-            "src/assets/images/1920x1080-blue-violet-solid-color-background.jpg"
+            "/assets/images/1920x1080-blue-violet-solid-color-background.jpg"
           }
         />
         <Project
           imgSrc={
-            "src/assets/images/1920x1080-blue-pigment-solid-color-background.jpg"
+            "/assets/images/1920x1080-blue-pigment-solid-color-background.jpg"
           }
         />
         <Project
           imgSrc={
-            "src/assets/images/1920x1080-boston-university-red-solid-color-background.jpg"
+            "/assets/images/1920x1080-boston-university-red-solid-color-background.jpg"
           }
         />
         <Project
           imgSrc={
-            "src/assets/images/1920x1080-bright-green-solid-color-background.jpg"
+            "/assets/images/1920x1080-bright-green-solid-color-background.jpg"
           }
         />
         <Project
           imgSrc={
-            "src/assets/images/1920x1080-brilliant-rose-solid-color-background.jpg"
+            "/assets/images/1920x1080-brilliant-rose-solid-color-background.jpg"
           }
         />
       </Grid>

@@ -28,7 +28,7 @@ function Hero() {
           mb={{ base: "10px", md: "30px", xl: "60px" }}
         >
           <Image
-            src="src\assets\images\parrot.jpg"
+            src="/assets/images/parrot.jpg"
             alt="parrot perched on a branch"
             maxH="50%"
           />

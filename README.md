@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-Welcome to my personal portfolio website. Created with a mobile-first responsive design, it offers a flexible user interface that adjusts seamlessly across devices of varying screen sizes.
+Created with a mobile-first responsive design, with a flexible user interface that adjusts seamlessly across devices of varying screen sizes.
 
 ## Installation & Setup
 
@@ -50,14 +50,9 @@ The above command will create a `dist` folder. It contains the bundled files, pr
 
 ## Technology Stack
 
-This portfolio is brought to life using the following state-of-the-art technologies:
+This portfolio is brought to life using the following technologies:
 
 - [React](https://reactjs.org/): A JavaScript library for building user interfaces
 - [Vite](https://vitejs.dev/): A next-generation frontend tooling
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework
 - [ChakraUI](https://chakra-ui.com/): A simple, modular, and accessible component library
-
-## Highlighted Features
-
-- Responsive Design: It ensures an engaging user experience across all devices and screen sizes.
-- Showcases Portfolio: It serves as a platform to introduce myself, show my projects and tell about my professional experiences.
