@@ -47,6 +47,7 @@ function Hero() {
             lg: "auto",
             xl: "auto",
           }}
+          ml={{ md: "20px" }}
           mt={{ base: "20px" }}
           mb={{ base: "10px", md: "30px", xl: "60px" }}
         >

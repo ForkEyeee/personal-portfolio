@@ -27,6 +27,7 @@ function AboutMe() {
         }}
         boxShadow={"2xl"}
         mb={{ base: "20px", md: "30px", xl: "60px" }}
+        mr={{ md: "20px" }}
       >
         <CardBody>
           <Heading>About Me</Heading>

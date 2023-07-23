@@ -30,12 +30,12 @@ function ProjectList() {
         ]}
         gap={6}
       >
-        <Project imgSrc={"./src/assets/images/nature1.jpg"} />
-        <Project imgSrc={"./src/assets/images/nature2.jpg"} />
-        <Project imgSrc={"./src/assets/images/nature3.jpg"} />
-        <Project imgSrc={"./src/assets/images/nature4.jpg"} />
-        <Project imgSrc={"./src/assets/images/nature5.jpg"} />
-        <Project imgSrc={"./src/assets/images/nature6.jpg"} />
+        <Project imgSrc={"./src/assets/images/battleship.png"} />
+        <Project imgSrc={"./src/assets/images/battleship.png"} />
+        <Project imgSrc={"./src/assets/images/battleship.png"} />
+        <Project imgSrc={"./src/assets/images/battleship.png"} />
+        <Project imgSrc={"./src/assets/images/battleship.png"} />
+        <Project imgSrc={"./src/assets/images/battleship.png"} />
       </Grid>
     </div>
   );
