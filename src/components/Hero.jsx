@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       <Flex
-        flexDirection={{ base: "column", md: "row" }}
+        flexDirection={{ base: "column", lg: "row" }}
         alignItems={"center"}
         justifyContent={"space-evenly"}
         // bgGradient={{
@@ -31,14 +31,16 @@ function Hero() {
           //   xl: "500px",
           // }}
 
-          h={"500px"}
-          // boxShadow={"dark-lg"}
-          // overflow={"hidden"}
+          h={{ base: "350px", sm: "425px", md: "500px" }}
+          w={"auto"} // boxShadow={"dark-lg"}
+          overflow={"hidden"}
           // ml={{ md: "20px" }}
           // mt={"20px"}
           // mb={{ base: "10px", md: "30px", xl: "60px" }}
         >
           <Image
+            h={"100%"}
+            w={"100%"}
             srcSet={`
     /assets/images/parrot1280.webp 1280w,
     /assets/images/parrot992.webp 992w,

@@ -17,6 +17,7 @@ function Project({ srcSet, src, sizes, alt, project }) {
             width="100%"
             borderRadius="md"
             className="sss"
+            justifyContent={"center"}
             h={"40%"}
           >
             <HStack

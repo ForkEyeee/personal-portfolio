@@ -13,9 +13,10 @@ function ContactMe() {
   return (
     <Box bg="gray.600" color="white" p={[2, 4, 6]}>
       <Flex
-        direction={["column", "row"]}
+        direction={{ base: "column", md: "row" }}
         justify="space-evenly"
         align="center"
+        alignItems={"center"}
         p={4}
       >
         <VStack spacing={4} align="start">
