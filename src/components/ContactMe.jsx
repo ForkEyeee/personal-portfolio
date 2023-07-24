@@ -78,8 +78,16 @@ function ContactMe() {
           p={"30px"}
         >
           <Image
-            alt="above the clouds in the sunset"
-            src="/assets/images/nature.jpg"
+            srcSet={`
+    /assets/images/writing1280.webp 1280w,
+    /assets/images/writing992.webp 992w,
+    /assets/images/writing768.webp 768w,
+    /assets/images/writing480.webp 480w`}
+            sizes={
+              "(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 992px) 992px, 1280px"
+            }
+            src="/assets/images/writing480.webp"
+            alt="person writing on paper"
             borderRadius={"xl"}
             boxShadow={"2xl"}
           />

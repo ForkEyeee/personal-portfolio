@@ -28,9 +28,18 @@ function Hero() {
           mb={{ base: "10px", md: "30px", xl: "60px" }}
         >
           <Image
-            src="/assets/images/parrot.jpg"
-            alt="parrot perched on a branch"
+            srcSet={`
+    /assets/images/parrot1280.webp 1280w,
+    /assets/images/parrot992.webp 992w,
+    /assets/images/parrot768.webp 768w,
+    /assets/images/parrot480.webp 480w`}
+            sizes={
+              "(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 992px) 992px, 1280px"
+            }
+            src="/assets/images/parrot480.webp"
+            boxShadow={"2xl"}
             maxH="50%"
+            alt="parrot perched on a branch"
           />
         </Box>
         <AboutMe />

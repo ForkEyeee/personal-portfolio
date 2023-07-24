@@ -30,63 +30,74 @@ function ProjectList() {
       >
         <Project
           srcSet={`
-/assets/images/todolist1280.png 1280w,
-/assets/images/todolist992.png 992w,
-/assets/images/todolist768.png 768w,
-/assets/images/todolist480.png 480w`}
+    /assets/images/todolist1280.png 1280w,
+    /assets/images/todolist992.png 992w,
+    /assets/images/todolist768.png 768w,
+    /assets/images/todolist480.png 480w`}
           src={`/assets/images/todolist480.png`}
           sizes={sizes}
+          alt="Todolist Project"
+          project={"This is a Todo-list Project"}
         />
 
         <Project
           srcSet={`
-/assets/images/memorycard1280.png 1280w,
-/assets/images/memorycard992.png 992w,
-/assets/images/memorycard768.png 768w,
-/assets/images/memorycard480.png 480w`}
+    /assets/images/memorycard1280.png 1280w,
+    /assets/images/memorycard992.png 992w,
+    /assets/images/memorycard768.png 768w,
+    /assets/images/memorycard480.png 480w`}
           src={`/assets/images/memorycard480.png`}
           sizes={sizes}
+          alt="Memory Card Project"
+          project={"This is a Memory Card Project"}
         />
 
         <Project
           srcSet={`
-/assets/images/library1280.png 1280w,
-/assets/images/library992.png 992w,
-/assets/images/library768.png 768w,
-/assets/images/library480.png 480w`}
+    /assets/images/library1280.png 1280w,
+    /assets/images/library992.png 992w,
+    /assets/images/library768.png 768w,
+    /assets/images/library480.png 480w`}
           src={`/assets/images/library480.png`}
           sizes={sizes}
+          alt="Library Project"
+          project={"This is a Library Project"}
         />
 
         <Project
           srcSet={`
-/assets/images/tictactoe1280.png 1280w,
-/assets/images/tictactoe992.png 992w,
-/assets/images/tictactoe768.png 768w,
-/assets/images/tictactoe480.png 480w`}
+    /assets/images/tictactoe1280.png 1280w,
+    /assets/images/tictactoe992.png 992w,
+    /assets/images/tictactoe768.png 768w,
+    /assets/images/tictactoe480.png 480w`}
           src={`/assets/images/tictactoe480.png`}
           sizes={sizes}
+          alt="Tictactoe Project"
+          project={"This is a Tictactoe Project"}
         />
 
         <Project
           srcSet={`
-/assets/images/admin1280.png 1280w,
-/assets/images/admin992.png 992w,
-/assets/images/admin768.png 768w,
-/assets/images/admin480.png 480w`}
+    /assets/images/admin1280.png 1280w,
+    /assets/images/admin992.png 992w,
+    /assets/images/admin768.png 768w,
+    /assets/images/admin480.png 480w`}
           src={`/assets/images/admin480.png`}
           sizes={sizes}
+          alt="Admin Dashboard Project"
+          project={"This is an Admin Dashboard Project"}
         />
 
         <Project
           srcSet={`
-/assets/images/battleship1280.png 1280w,
-/assets/images/battleship992.png 992w,
-/assets/images/battleship768.png 768w,
-/assets/images/battleship480.png 480w`}
+    /assets/images/battleship1280.png 1280w,
+    /assets/images/battleship992.png 992w,
+    /assets/images/battleship768.png 768w,
+    /assets/images/battleship480.png 480w`}
           src={`/assets/images/battleship480.png`}
           sizes={sizes}
           alt="Battleship Project"
+          project={"This is a Battleship Project"}
         />
       </Grid>
     </section>
