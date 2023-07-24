@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       <Flex
-        flexDirection={{ base: "column", lg: "row" }}
+        flexDirection={{ base: "column", xl: "row" }}
         alignItems={"center"}
         justifyContent={"center"}
         bgGradient={[
@@ -16,7 +16,10 @@ function Hero() {
         minHeight={{ base: "900px", lg: "600px" }}
         padding={{ base: "1rem", lg: "2rem" }}
       >
-        <AspectRatio ratio={0.857} width={{ base: "80%", lg: "40%" }}>
+        <AspectRatio
+          ratio={0.857}
+          width={{ base: "60%", lg: "30%", xl: "20%" }}
+        >
           <Image
             objectFit="cover"
             src="/assets/images/parrot480.webp"
