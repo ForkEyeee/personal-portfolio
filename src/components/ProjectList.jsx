@@ -25,7 +25,7 @@ function ProjectList() {
           md: "repeat(2, 1fr)",
           xl: "repeat(3, 1fr)",
         }}
-        gap={10}
+        gap={5}
       >
         <Project
           srcSet={`

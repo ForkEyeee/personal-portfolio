@@ -5,22 +5,12 @@ function AboutMe() {
     <Flex
       direction="column"
       align="center"
-      // justify="flex-start"
-      // maxH="500px"
-      // mt={"20px"}
+      justifyContent="center"
+      maxW={{ base: "100%", sm: "80%", md: "70%", lg: "50%", xl: "30%" }}
+      minHeight="50vh"
+      padding={{ base: "1rem", lg: "2rem" }}
     >
-      <Card
-        maxW={{
-          base: "400px",
-          sm: "500px",
-          md: "500px",
-          lg: "600px",
-          xl: "700px",
-        }}
-        boxShadow={"2xl"}
-        // mb={{ base: "20px", md: "30px", xl: "60px" }}
-        // mr={{ md: "20px" }}
-      >
+      <Card width="100%" boxShadow={"2xl"}>
         <CardBody>
           <VStack gap={"15px"}>
             <Heading>About Me</Heading>
