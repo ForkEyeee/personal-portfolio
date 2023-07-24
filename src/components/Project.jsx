@@ -5,7 +5,7 @@ function Project({ srcSet, src, sizes, alt, project }) {
   return (
     <>
       <GridItem>
-        <Box position="relative" boxShadow="2xl" h="100%" borderRadius="md">
+        <Box position="relative" boxShadow="2xl" h="166px" borderRadius="md">
           <Image srcSet={srcSet} src={src} sizes={sizes} alt={alt} />
 
           <VStack
@@ -16,23 +16,27 @@ function Project({ srcSet, src, sizes, alt, project }) {
             p={4}
             width="100%"
             borderRadius="md"
+            className="sss"
+            h={"40%"}
           >
-            <HStack>
-              <Text>{project}</Text>
-              <HStack
-                justifyContent={"flex-end"}
-                gap={"20px"}
-                cursor={"pointer"}
-              >
+            <HStack
+              className="testing"
+              w={"100%"}
+              justifyContent={"space-between"}
+            >
+              <Text fontSize={"12px"}>{project}</Text>
+              <HStack gap={"20px"} cursor={"pointer"}>
                 <Image
-                  boxSize="12%"
+                  h={"19.33px"}
+                  w={"19.33px"}
                   objectFit="cover"
                   src="/assets/icons/github-mark-white.svg"
                   alt="github logo"
                   _hover={{ transform: "scale(1.2)" }}
                 />
                 <Image
-                  boxSize="12%"
+                  h={"19.33px"}
+                  w={"19.33px"}
                   objectFit="cover"
                   src="/assets/icons/linkedin-original.svg"
                   alt="linked in logo"

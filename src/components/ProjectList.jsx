@@ -1,10 +1,9 @@
 import { Grid, Heading } from "@chakra-ui/react";
 import Project from "./Project";
+const sizes =
+  "(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 992px) 992px, 1280px";
 
 function ProjectList() {
-  const sizes =
-    "(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 992px) 992px, 1280px";
-
   return (
     <section>
       <Heading

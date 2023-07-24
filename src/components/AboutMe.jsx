@@ -5,9 +5,9 @@ function AboutMe() {
     <Flex
       direction="column"
       align="center"
-      justify="flex-start"
-      maxH="500px"
-      mt={"20px"}
+      // justify="flex-start"
+      // maxH="500px"
+      // mt={"20px"}
     >
       <Card
         maxW={{
@@ -18,8 +18,8 @@ function AboutMe() {
           xl: "700px",
         }}
         boxShadow={"2xl"}
-        mb={{ base: "20px", md: "30px", xl: "60px" }}
-        mr={{ md: "20px" }}
+        // mb={{ base: "20px", md: "30px", xl: "60px" }}
+        // mr={{ md: "20px" }}
       >
         <CardBody>
           <VStack gap={"15px"}>

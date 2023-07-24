@@ -3,29 +3,40 @@ import AboutMe from "./AboutMe";
 
 function Hero() {
   return (
-    <div>
+    <>
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         alignItems={"center"}
-        justifyContent={"center"}
-        bgGradient={{
-          base: "linear(to-t, green.500, blue.500)",
-          md: "linear(to-t, orange.400, pink.200)",
+        justifyContent={"space-evenly"}
+        // bgGradient={{
+        //   base: "linear(to-t, green.500, blue.500)",
+        //   md: "linear(to-t, orange.400, pink.200)",
+        // }}
+        bgColor={{
+          base: "red",
+          sm: "blue",
+          md: "orange",
+          lg: "pink",
+          xl: "green",
         }}
-        gap={{ md: "50px" }}
-        maxH="none"
+        h={"1000px"}
+        // gap={{ md: "50px" }}
+        // overflow={"hidden"}
       >
         <Box
-          w={{
-            base: "200px",
-            md: "300px",
-            lg: "400px",
-            xl: "500px",
-          }}
-          boxShadow={"dark-lg"}
-          ml={{ md: "20px" }}
-          mt={"20px"}
-          mb={{ base: "10px", md: "30px", xl: "60px" }}
+          // w={{
+          //   base: "200px",
+          //   md: "300px",
+          //   lg: "400px",
+          //   xl: "500px",
+          // }}
+
+          h={"500px"}
+          // boxShadow={"dark-lg"}
+          // overflow={"hidden"}
+          // ml={{ md: "20px" }}
+          // mt={"20px"}
+          // mb={{ base: "10px", md: "30px", xl: "60px" }}
         >
           <Image
             srcSet={`
@@ -37,14 +48,14 @@ function Hero() {
               "(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 992px) 992px, 1280px"
             }
             src="/assets/images/parrot480.webp"
-            boxShadow={"2xl"}
-            maxH="50%"
+            // boxShadow={"2xl"}
+            // maxH="50%"
             alt="parrot perched on a branch"
           />
         </Box>
         <AboutMe />
       </Flex>
-    </div>
+    </>
   );
 }
 
