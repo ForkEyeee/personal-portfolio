@@ -6,6 +6,7 @@ import {
   Image,
   HStack,
   Heading,
+  AspectRatio,
 } from "@chakra-ui/react";
 import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
 
@@ -14,7 +15,7 @@ function ContactMe() {
     <Box bg="gray.600" color="white" p={{ base: 2, sm: 4, md: 6 }}>
       <Flex
         direction={{ base: "column", md: "row" }}
-        justify="space-evenly"
+        justify="space-around"
         align="center"
         alignItems={"center"}
         p="4"
@@ -61,22 +62,26 @@ function ContactMe() {
             />
           </HStack>
         </VStack>
-        <Box width="full" maxW="50%" mt={[4, 4, 0]} p={4}>
+        <AspectRatio
+          ratio={0.857}
+          minW={{ base: "65%", md: "35%", lg: "25%" }}
+          mt={"30px"}
+          p={"30px"}
+        >
           <Image
+            objectFit="cover"
             srcSet={`
-              /assets/images/writing1280.webp 1280w,
-              /assets/images/writing992.webp 992w,
-              /assets/images/writing768.webp 768w,
-              /assets/images/writing480.webp 480w`}
+            /assets/images/writing1280.webp 1280w,
+            /assets/images/writing992.webp 992w,
+            /assets/images/writing768.webp 768w,
+            /assets/images/writing480.webp 480w`}
             sizes={
               "(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 992px) 992px, 1280px"
             }
             src="/assets/images/writing480.webp"
-            alt="person writing on paper"
-            borderRadius="xl"
-            boxShadow="2xl"
+            alt="parrot perched on a branch"
           />
-        </Box>
+        </AspectRatio>
       </Flex>
     </Box>
   );

@@ -42,15 +42,15 @@ function Project({ srcSet, src, sizes, alt, project }) {
                 <Text fontSize="12px">{project}</Text>
                 <HStack gap="15px" cursor="pointer">
                   <Image
-                    h="19.33px"
-                    w="19.33px"
+                    h="35px"
+                    w="35px"
                     src="/assets/icons/github-mark-white.svg"
                     alt="github logo"
                     _hover={{ transform: "scale(1.2)" }}
                   />
                   <Image
-                    h="19.33px"
-                    w="19.33px"
+                    h="35px"
+                    w="35px"
                     src="/assets/icons/linkedin-original.svg"
                     alt="linked in logo"
                     _hover={{ transform: "scale(1.2)" }}
