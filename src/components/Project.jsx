@@ -12,20 +12,15 @@ import PropTypes from "prop-types";
 function Project({ srcSet, src, sizes, alt, project }) {
   return (
     <>
-      <GridItem className="woof">
-        <AspectRatio className="meow" maxH={"300px"}>
-          <Box
-            position="relative"
-            boxShadow="2xl"
-            borderRadius="md"
-            maxH={"85%"}
-          >
+      <GridItem>
+        <AspectRatio maxH="300px">
+          <Box position="relative" boxShadow="2xl" borderRadius="md" maxH="85%">
             <Image
               srcSet={srcSet}
               src={src}
               sizes={sizes}
               alt={alt}
-              objectFit={"cover"}
+              objectFit="cover"
             />
 
             <VStack
@@ -37,27 +32,25 @@ function Project({ srcSet, src, sizes, alt, project }) {
               width="100%"
               borderRadius="md"
               className="sss"
-              justifyContent={"center"}
+              justifyContent="center"
             >
               <HStack
                 className="testing"
-                justifyContent={"space-around"}
-                w={"100%"}
+                justifyContent="space-around"
+                w="100%"
               >
-                <Text fontSize={"12px"}>{project}</Text>
-                <HStack gap={"15px"} cursor={"pointer"}>
+                <Text fontSize="12px">{project}</Text>
+                <HStack gap="15px" cursor="pointer">
                   <Image
-                    h={"19.33px"}
-                    w={"19.33px"}
-                    // objectFit="cover"
+                    h="19.33px"
+                    w="19.33px"
                     src="/assets/icons/github-mark-white.svg"
                     alt="github logo"
                     _hover={{ transform: "scale(1.2)" }}
                   />
                   <Image
-                    h={"19.33px"}
-                    w={"19.33px"}
-                    // objectFit="cover"
+                    h="19.33px"
+                    w="19.33px"
                     src="/assets/icons/linkedin-original.svg"
                     alt="linked in logo"
                     _hover={{ transform: "scale(1.2)" }}

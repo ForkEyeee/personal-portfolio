@@ -7,12 +7,12 @@ function AboutMe() {
       align="center"
       justifyContent="center"
       maxW={{ base: "100%", sm: "80%", md: "70%", lg: "50%", xl: "30%" }}
-      minHeight="50vh"
+      minH="50vh"
       padding={{ base: "1rem", lg: "2rem" }}
     >
-      <Card width="100%" boxShadow={"2xl"}>
+      <Card w="100%" boxShadow="2xl">
         <CardBody>
-          <VStack gap={"15px"}>
+          <VStack gap="1rem">
             <Heading>About Me</Heading>
             <Text>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae

@@ -11,33 +11,33 @@ import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
 
 function ContactMe() {
   return (
-    <Box bg="gray.600" color="white" p={[2, 4, 6]}>
+    <Box bg="gray.600" color="white" p={{ base: 2, sm: 4, md: 6 }}>
       <Flex
         direction={{ base: "column", md: "row" }}
         justify="space-evenly"
         align="center"
         alignItems={"center"}
-        p={4}
+        p="4"
       >
-        <VStack spacing={4} align="start">
-          <Heading mt={4}>Contact Me</Heading>
+        <VStack spacing="4" align="start">
+          <Heading mt="4">Contact Me</Heading>
           <Text>
             Please get in touch if you think our <br />
             work could be mutually beneficial!
           </Text>
-          <VStack align="start" spacing={2}>
+          <VStack align="start" spacing="2">
             <Text>1234 Random Road</Text>
             <Text>Random Town, California 12345</Text>
-            <HStack mt={2}>
+            <HStack mt="2">
               <PhoneIcon />
               <Text>555-555-5555</Text>
             </HStack>
-            <HStack mt={2}>
+            <HStack mt="2">
               <EmailIcon />
               <Text>person.is.not.real@gmail.com</Text>
             </HStack>
           </VStack>
-          <HStack spacing={4} mt={4}>
+          <HStack spacing="2" mt="4">
             <Image
               boxSize="50px"
               objectFit="contain"
@@ -61,7 +61,7 @@ function ContactMe() {
             />
           </HStack>
         </VStack>
-        <Box width="full" maxW={{ md: "50%", xl: "40%" }} mt={[4, 4, 0]} p={4}>
+        <Box width="full" maxW="50%" mt={[4, 4, 0]} p={4}>
           <Image
             srcSet={`
               /assets/images/writing1280.webp 1280w,

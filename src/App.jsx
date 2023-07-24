@@ -4,7 +4,7 @@ import ContactMe from "./components/ContactMe";
 
 function App() {
   return (
-    <div className="test">
+    <div>
       <Hero />
       <ProjectList />
       <ContactMe />

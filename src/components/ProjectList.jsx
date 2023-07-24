@@ -8,11 +8,12 @@ function ProjectList() {
     <section>
       <Heading
         pt={10}
-        pb={10}
         textAlign={"center"}
-        fontSize={"4xl"}
+        fontSize={"5xl"}
         fontWeight={"bold"}
         color={"teal.500"}
+        letterSpacing={"wide"}
+        textShadow="1px 1px rgba(0, 0, 0, 0.1)"
       >
         My Projects
       </Heading>
