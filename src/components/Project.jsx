@@ -4,8 +4,13 @@ import PropTypes from "prop-types";
 function Project({ srcSet, src, sizes, alt, project }) {
   return (
     <>
-      <GridItem>
-        <Box position="relative" boxShadow="2xl" h="166px" borderRadius="md">
+      <GridItem className="woof" h={"10rem"}>
+        <Box
+          position="relative"
+          boxShadow="2xl"
+          // h={{ base: "100%" }}
+          borderRadius="md"
+        >
           <Image srcSet={srcSet} src={src} sizes={sizes} alt={alt} />
 
           <VStack

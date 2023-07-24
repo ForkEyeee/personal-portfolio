@@ -19,7 +19,7 @@ function Hero() {
           lg: "pink",
           xl: "green",
         }}
-        h={"1000px"}
+        h={"62.5rem"}
         // gap={{ md: "50px" }}
         // overflow={"hidden"}
       >
