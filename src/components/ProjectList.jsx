@@ -2,6 +2,9 @@ import { Grid, Heading } from "@chakra-ui/react";
 import Project from "./Project";
 
 function ProjectList() {
+  const sizes =
+    "(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 992px) 992px, 1280px";
+
   return (
     <section>
       <Heading
@@ -26,34 +29,64 @@ function ProjectList() {
         gap={10}
       >
         <Project
-          imgSrc={
-            "/assets/images/1920x1080-blue-ncs-solid-color-background.jpg"
-          }
+          srcSet={`
+/assets/images/todolist1280.png 1280w,
+/assets/images/todolist992.png 992w,
+/assets/images/todolist768.png 768w,
+/assets/images/todolist480.png 480w`}
+          src={`/assets/images/todolist480.png`}
+          sizes={sizes}
         />
+
         <Project
-          imgSrc={
-            "/assets/images/1920x1080-blue-violet-solid-color-background.jpg"
-          }
+          srcSet={`
+/assets/images/memorycard1280.png 1280w,
+/assets/images/memorycard992.png 992w,
+/assets/images/memorycard768.png 768w,
+/assets/images/memorycard480.png 480w`}
+          src={`/assets/images/memorycard480.png`}
+          sizes={sizes}
         />
+
         <Project
-          imgSrc={
-            "/assets/images/1920x1080-blue-pigment-solid-color-background.jpg"
-          }
+          srcSet={`
+/assets/images/library1280.png 1280w,
+/assets/images/library992.png 992w,
+/assets/images/library768.png 768w,
+/assets/images/library480.png 480w`}
+          src={`/assets/images/library480.png`}
+          sizes={sizes}
         />
+
         <Project
-          imgSrc={
-            "/assets/images/1920x1080-boston-university-red-solid-color-background.jpg"
-          }
+          srcSet={`
+/assets/images/tictactoe1280.png 1280w,
+/assets/images/tictactoe992.png 992w,
+/assets/images/tictactoe768.png 768w,
+/assets/images/tictactoe480.png 480w`}
+          src={`/assets/images/tictactoe480.png`}
+          sizes={sizes}
         />
+
         <Project
-          imgSrc={
-            "/assets/images/1920x1080-bright-green-solid-color-background.jpg"
-          }
+          srcSet={`
+/assets/images/admin1280.png 1280w,
+/assets/images/admin992.png 992w,
+/assets/images/admin768.png 768w,
+/assets/images/admin480.png 480w`}
+          src={`/assets/images/admin480.png`}
+          sizes={sizes}
         />
+
         <Project
-          imgSrc={
-            "/assets/images/1920x1080-brilliant-rose-solid-color-background.jpg"
-          }
+          srcSet={`
+/assets/images/battleship1280.png 1280w,
+/assets/images/battleship992.png 992w,
+/assets/images/battleship768.png 768w,
+/assets/images/battleship480.png 480w`}
+          src={`/assets/images/battleship480.png`}
+          sizes={sizes}
+          alt="Battleship Project"
         />
       </Grid>
     </section>
