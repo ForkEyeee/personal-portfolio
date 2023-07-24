@@ -11,8 +11,8 @@ function AboutMe() {
     >
       <Card
         maxW={{
-          base: "300px",
-          sm: "400px",
+          base: "400px",
+          sm: "500px",
           md: "500px",
           lg: "600px",
           xl: "700px",

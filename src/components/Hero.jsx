@@ -1,4 +1,4 @@
-import { Box, Image, Flex } from "@chakra-ui/react";
+import { Box, Image, Flex, AspectRatio } from "@chakra-ui/react";
 import AboutMe from "./AboutMe";
 
 function Hero() {
@@ -8,10 +8,6 @@ function Hero() {
         flexDirection={{ base: "column", lg: "row" }}
         alignItems={"center"}
         justifyContent={"space-evenly"}
-        // bgGradient={{
-        //   base: "linear(to-t, green.500, blue.500)",
-        //   md: "linear(to-t, orange.400, pink.200)",
-        // }}
         bgColor={{
           base: "red",
           sm: "blue",
@@ -19,42 +15,23 @@ function Hero() {
           lg: "pink",
           xl: "green",
         }}
-        h={"62.5rem"}
-        // gap={{ md: "50px" }}
-        // overflow={"hidden"}
+        h={"900px"}
       >
-        <Box
-          // w={{
-          //   base: "200px",
-          //   md: "300px",
-          //   lg: "400px",
-          //   xl: "500px",
-          // }}
-
-          h={{ base: "350px", sm: "425px", md: "500px" }}
-          w={"auto"} // boxShadow={"dark-lg"}
-          overflow={"hidden"}
-          // ml={{ md: "20px" }}
-          // mt={"20px"}
-          // mb={{ base: "10px", md: "30px", xl: "60px" }}
-        >
+        <AspectRatio ratio={"0.857"} width="80%">
           <Image
-            h={"100%"}
-            w={"100%"}
+            objectFit="cover"
             srcSet={`
-    /assets/images/parrot1280.webp 1280w,
-    /assets/images/parrot992.webp 992w,
-    /assets/images/parrot768.webp 768w,
-    /assets/images/parrot480.webp 480w`}
+              /assets/images/parrot1280.webp 1280w,
+              /assets/images/parrot992.webp 992w,
+              /assets/images/parrot768.webp 768w,
+              /assets/images/parrot480.webp 480w`}
             sizes={
               "(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 992px) 992px, 1280px"
             }
             src="/assets/images/parrot480.webp"
-            // boxShadow={"2xl"}
-            // maxH="50%"
             alt="parrot perched on a branch"
           />
-        </Box>
+        </AspectRatio>
         <AboutMe />
       </Flex>
     </>
