@@ -31,7 +31,7 @@ function Project({ srcSet, src, sizes, alt, project }) {
                 justifyContent="space-around"
                 w="100%"
               >
-                <Text fontSize="12px">{project}</Text>
+                <Text fontSize="16px">{project}</Text>
                 <HStack gap="15px" cursor="pointer">
                   <Image
                     h="35px"
