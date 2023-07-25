@@ -13,16 +13,9 @@ function Project({ srcSet, src, sizes, alt, project }) {
   return (
     <>
       <GridItem>
-        <AspectRatio maxH="300px">
-          <Box position="relative" boxShadow="2xl" borderRadius="md" maxH="85%">
-            <Image
-              srcSet={srcSet}
-              src={src}
-              sizes={sizes}
-              alt={alt}
-              objectFit="cover"
-            />
-
+        <AspectRatio maxW={{ base: "100%" }} maxH={{ base: "450px" }}>
+          <Box position="relative" borderRadius="md" maxH="83%">
+            <Image srcSet={srcSet} src={src} sizes={sizes} alt={alt} />
             <VStack
               position="absolute"
               bottom="0"
@@ -31,7 +24,6 @@ function Project({ srcSet, src, sizes, alt, project }) {
               p={4}
               width="100%"
               borderRadius="md"
-              className="sss"
               justifyContent="center"
             >
               <HStack

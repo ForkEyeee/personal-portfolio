@@ -69,7 +69,6 @@ function ContactMe() {
           p={"30px"}
         >
           <Image
-            objectFit="cover"
             srcSet={`
             /assets/images/writing1280.webp 1280w,
             /assets/images/writing992.webp 992w,
@@ -79,7 +78,7 @@ function ContactMe() {
               "(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 992px) 992px, 1280px"
             }
             src="/assets/images/writing480.webp"
-            alt="parrot perched on a branch"
+            alt="person writing on paper"
           />
         </AspectRatio>
       </Flex>

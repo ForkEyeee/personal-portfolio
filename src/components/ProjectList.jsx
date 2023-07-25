@@ -8,6 +8,7 @@ function ProjectList() {
     <section>
       <Heading
         pt={10}
+        pb={5}
         textAlign={"center"}
         fontSize={"5xl"}
         fontWeight={"bold"}
@@ -26,7 +27,7 @@ function ProjectList() {
           md: "repeat(2, 1fr)",
           xl: "repeat(3, 1fr)",
         }}
-        gap={5}
+        columnGap={5}
       >
         <Project
           srcSet={`

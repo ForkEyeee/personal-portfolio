@@ -18,7 +18,7 @@ function Hero() {
       >
         <AspectRatio ratio={0.857} minW={{ base: "60%", lg: "30%", xl: "20%" }}>
           <Image
-            objectFit="cover"
+            boxShadow={"2xl"}
             srcSet={`
             /assets/images/parrot1280.webp 1280w,
             /assets/images/parrot992.webp 992w,
